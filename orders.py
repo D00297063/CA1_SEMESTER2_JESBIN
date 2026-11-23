@@ -1,12 +1,23 @@
+##create the pizza class
 class Pizza:
-    SIZES = ("Small", "Medium", "Large", "Extra-large")
+    CorrectSize = ["_small", "_Medium", "_Large", "_Extra-Large"]
+    Topping = ["_Tomato", "_Onion", "_Sweetcorn", "_Bacon"]
 
-    def __init__(self, toppings, size="Large"):
-        self.toppings = toppings
-        if size in self.SIZES:
-            self.__size = size
-        else:
-            self.__size = "Large"
 
-    def get_size(self):
-        return self.__size
+
+
+##add the main consructor here
+def __init__(self, Topping, CorrectSize = "Large"):
+
+    self.Topping = Topping
+
+    if CorrectSize in self.CorrectSize:
+        self.__CorrectSize = CorrectSize
+
+    else:
+        self.__CorrectSize = "Large"
+
+
+##call for the size
+def get_size(self):
+      return self.__CorrectSize      
