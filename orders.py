@@ -4,7 +4,8 @@ class Pizza:
 
     def __init__(self, toppings, size="Large"):
         self.toppings = toppings
-        self.__size = size
+        if size in self.SIZES:
+            self.__size = size
 
     def get_size(self):
         return self.__size
